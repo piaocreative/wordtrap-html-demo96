@@ -1,0 +1,151 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	position: relative;
+	margin-bottom: 0.875rem;
+
+	.product-image {
+		padding-top: 2rem;
+		position: relative;
+
+		img {
+			min-width: 6rem;
+			min-height: 15rem;
+			margin: auto;
+			border-radius: 0.5rem;
+		}
+	}
+
+	.product-details {
+		z-index: 1;
+	}
+
+	.product-price {
+		font-family: $heading-font;
+		font-weight: 500;
+		font-size: 1.875rem;
+		color: $theme-color;
+
+		del {
+			font-size: 1.25rem;
+			color: #7e7e7e;
+			margin-right: 0.5rem;
+		}
+	}
+
+	p {
+		color: #8b8b8b;
+	}
+
+	.product-rating {
+		line-height: 1;
+		font-size: 0.875rem;
+		color: #b3b2b0;
+
+		i {
+			color: #ff893f;
+			font-size: 0.65rem;
+
+			&.empty {
+				color: rgba(#ff893f, 0.5);
+			}
+		}
+	}
+
+	.product-btns {
+		@include transition(all 0.5s ease-in-out);
+	}
+
+	.add-to-cart, .add-to-wishlist {
+		height: 3.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		font-size: 1.25rem;
+		color: #7f7f7f;
+	}	
+
+	&:hover {
+		background-color: #f7f7f7;
+
+		.product-btns {
+			opacity: 1;
+		}
+
+		.add-to-cart {
+			background-color: $theme-color;
+			color: $white;
+		}
+	
+		.add-to-wishlist {
+			background-color: #c1765c;
+			color: $white;
+		}
+	}
+}
+
+.onnew, .onsale {
+	font-size: 0.875rem;
+	font-weight: 500;
+	position: absolute;
+	top: 2rem;
+	left: 2rem;
+	text-transform: uppercase;
+	color: $theme-color;
+	letter-spacing: 0.05rem;
+}
+
+.ads {
+    position: relative;
+    display: block;
+	margin-bottom: 1.5rem;
+
+    .ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+			border-radius: 0.5rem;;
+        }
+    }
+
+    .ads-body {
+        position: relative;
+        z-index: 1;
+		padding: 7rem 0;
+
+		h2 {
+			line-height: 1.2;
+		}
+    }
+}

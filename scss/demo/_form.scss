@@ -1,0 +1,39 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Form: form.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Form Styles
+-----------------------------------------------------------------*/
+#subscribe {
+    position: relative;
+    padding: 5rem;
+    background-color: $theme-color;
+    z-index: 1;
+
+    .subscribe-thumbnail {
+        position: absolute;
+        bottom: 0;
+        right: 2rem;
+        z-index: -1;
+    }
+}
+
+#subscribe-form {
+    ::placeholder {
+        color: $white;
+    }
+}
+
+#contact-form {
+    ::placeholder {
+        color: #adadad;
+    }
+
+    a, p {
+        color: #adadad;
+    }
+}

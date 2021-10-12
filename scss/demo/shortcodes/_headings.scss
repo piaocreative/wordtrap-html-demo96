@@ -1,0 +1,39 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: headings.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Heading Styles
+-----------------------------------------------------------------*/
+
+
+/* Heading Block - with Subtitle
+-----------------------------------------------------------------*/
+
+.heading-block { 
+	margin-bottom: 2.875rem; 
+	position: relative;
+	
+	.title {
+		line-height: 1.2;
+	}
+
+	.heading-icon {
+		width: 5rem;
+		height: 3rem;
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		&.top {
+			background-image: url(../images/icons/link-icon-top.png);
+		}
+		
+		&.left {
+			background-image: url(../images/icons/link-icon-left.png);
+		}
+	}
+}

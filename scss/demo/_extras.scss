@@ -1,0 +1,32 @@
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+.container-fluid {
+	overflow: hidden;
+}
+
+.arrows {
+	a {
+		padding: 0.875rem 1.25rem;
+		border-radius: 0.5rem;
+		background-color: #fdf9f1;
+		color: #dbb6a9;
+
+		&:hover {
+			background-color: $theme-color;
+			color: $white;
+		}
+	}
+}
+
+.service {
+	background-image: url(../images/service.png);
+
+	.slick-slide {
+		height: auto !important;
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding: 20rem 0 5rem;
+	}
+}
